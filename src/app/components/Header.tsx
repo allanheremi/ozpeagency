@@ -3,9 +3,7 @@ import Image from "next/image";
 import MenuIcon from "@mui/icons-material/Menu";
 import Link from "next/link";
 
-type Props = {};
-
-const Header = (props: Props) => {
+const Header = () => {
   return (
     <header className="w-full">
       <div className="flex items-center justify-between p-4">

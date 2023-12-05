@@ -1,9 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 
-type Props = {};
-
-const page = (props: Props) => {
+const page = () => {
   return (
     <>
       <Header />

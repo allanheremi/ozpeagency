@@ -1,9 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-type Props = {};
-
-const Clients = (props: Props) => {
+const Clients = () => {
   return (
     <>
     <div className="text-black bg-white">

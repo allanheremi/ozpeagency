@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-const Main = (props: Props) => {
+const Main = () => {
   return (
     // @DEV padding here to show BG white top?
     <video controls autoPlay={true} muted >

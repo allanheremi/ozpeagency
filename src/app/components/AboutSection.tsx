@@ -1,9 +1,7 @@
 import React from 'react'
 import About from './About'
 
-type Props = {}
-
-const AboutSection = (props: Props) => {
+const AboutSection = () => {
     const aboutContentOne = {
         heading: 'NGMI SER',
         breadTextOne: 'invest more in btc',

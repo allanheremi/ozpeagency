@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 
-type Props = {};
-
 const Footer = () => {
   return (
     <footer className="p-4 py-8">

@@ -14,10 +14,13 @@ const page = () => {
             <a href="mailto:webmaster@example.com" className="not-italic">
               ozpeagency@gmail.com
             </a>
-            <a href="tel:+46 76 29 89 752" className="font-style: normal-case">+46 76 29 89 752 </a>
-            </address>
+            <a href="tel:+46 76 29 89 752" className="font-style: normal-case">
+              +46 76 29 89 752{" "}
+            </a>
+          </address>
 
-            <div className="flex flex-row justify-around p-8 gap-16 w-screen left-0 bottom-0 absolute">
+          <div className="absolute bottom-0 left-0 flex w-screen flex-row justify-around gap-16 p-8">
+            <a href="https://www.instagram.com/ozpeagency/" target="_blank">
               <Image
                 src={"/instagramicon.png"}
                 height={42}
@@ -25,6 +28,9 @@ const page = () => {
                 alt="instagram"
                 className="hover:cursor-pointer"
               />
+            </a>
+
+            <a href="https://twitter.com/al3xc00p3r" target="_blank">
               <Image
                 src={"/X.png"}
                 height={42}
@@ -32,6 +38,12 @@ const page = () => {
                 alt="X"
                 className="hover:cursor-pointer"
               />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/petrus-%C3%B6zer-315644269/"
+              target="_blank"
+            >
               <Image
                 src={"/linkedin.png"}
                 height={42}
@@ -39,7 +51,8 @@ const page = () => {
                 alt="linkedin"
                 className="hover:cursor-pointer"
               />
-            </div>
+            </a>
+          </div>
         </div>
       </section>
     </>

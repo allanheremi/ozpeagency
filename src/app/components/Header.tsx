@@ -21,12 +21,13 @@ const Header = () => {
             </Link>
             <h1 className="text-2xl md:text-4xl">OZPE AGENCY</h1>
             <div className="relative">
-              <MenuIcon
+              {!showDropDown ? <MenuIcon
                 fontSize="large"
                 className="hover:cursor-pointer"
                 onClick={() => setShowDropDown(!showDropDown)}
-              />
+              /> : <Close fontSize="large" className="hover:cursor-pointer" onClick={() => setShowDropDown(!showDropDown)}/>}
               {showDropDown && (
+                
                 <div className="absolute right-0 top-full gap-4 bg-white p-2 text-2xl text-black flex flex-col items-center rounded-sm">
                   <Link href={"/contact"}>
                     <p>Contact</p>
@@ -59,7 +60,7 @@ const Header = () => {
               onClick={() => setShowMenu(!showMenu)}
             />
             {showMenu && (
-              <div className="fixed left-0 top-0 h-full w-full bg-white">
+              <div className="fixed left-0 top-0 h-full w-full bg-white overflow-hidden z-10">
                 <div className="absolute right-4 top-4">
                   <Close
                     onClick={() => setShowMenu(false)}
@@ -68,11 +69,9 @@ const Header = () => {
                   />
                 </div>
                 <div className="flex h-full w-full flex-col items-center justify-center gap-16">
-                  {/* Your content here */}
                   <Link href={"/about"}>
                     <p className="text-2xl text-black">ABOUT</p>
                   </Link>
-
                   <Link href={"/contact"}>
                     <p className="text-2xl text-black">CONTACT</p>
                   </Link>

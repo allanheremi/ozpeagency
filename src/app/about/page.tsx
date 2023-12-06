@@ -6,9 +6,9 @@ const page = () => {
   return (
     <>
       <Header />
-      <div className="flex items-center justify-center h-[calc(50vh)] p-8 md:p-18 ">
+      <div className="md:p-18 flex h-[calc(50vh)] items-center justify-center p-8 ">
         <div>
-          <h1 className="text-3xl py-4">ABOUT US</h1>
+          <h1 className="py-4 text-3xl">ABOUT US</h1>
           <p className="text-white/80">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
             maxime numquam neque quia sunt. Culpa ducimus illo excepturi autem?
@@ -18,9 +18,7 @@ const page = () => {
         </div>
       </div>
 
-      <Footer/>
-
-      
+      <Footer />
     </>
   );
 };

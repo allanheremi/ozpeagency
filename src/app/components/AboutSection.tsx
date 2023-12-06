@@ -1,35 +1,36 @@
 import React from "react";
 import About from "./About";
+import Link from "next/link";
 
 const AboutSection = () => {
   const aboutContentOne = {
     heading: "PRODUCTION",
-    breadTextOne: "Photography",
-    breadTextTwo: "Film",
-    breadTextThree: "Graphic design",
-    breadTextFour: "Music & sound",
+    breadTextOne: "photography",
+    breadTextTwo: "film",
+    breadTextThree: "graphic design",
+    breadTextFour: "music & sound",
   };
 
   const aboutContentTwo = {
     heading: "BRANDING",
-    breadTextOne: "Logo design",
-    breadTextTwo: "Brand messaging",
-    breadTextThree: "Brand identity",
-    breadTextFour: "",
+    breadTextOne: "creative direction",
+    breadTextTwo: "brand identity",
+    breadTextThree: "brand messaging",
+    breadTextFour: "logo design",
   };
 
   const aboutContentThree = {
     heading: "BUILDING",
-    breadTextOne: "Web development",
-    breadTextTwo: "UX/UI design",
+    breadTextOne: "web development",
+    breadTextTwo: "ux/ui design",
     breadTextThree: "",
     breadTextFour: "",
   };
 
   const aboutContentFour = {
     heading: "MANAGEMENT",
-    breadTextOne: "Social media management",
-    breadTextTwo: "",
+    breadTextOne: "social media",
+    breadTextTwo: "community",
     breadTextThree: "",
     breadTextFour: "",
   };
@@ -41,7 +42,11 @@ const AboutSection = () => {
         <About content={aboutContentTwo} />
         <About content={aboutContentThree} />
         <About content={aboutContentFour} />
+  
       </div>
+      <div className="flex justify-center p-12 text-sm">
+        <p>is what you are looking for not on the list? <Link href={'/contact'} className="underline">ask us anyway,</Link> we basically do everything.</p>
+        </div>
     </>
   );
 };

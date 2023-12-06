@@ -1,42 +1,49 @@
-import React from 'react'
-import About from './About'
+import React from "react";
+import About from "./About";
 
 const AboutSection = () => {
-    const aboutContentOne = {
-        heading: 'NGMI SER',
-        breadTextOne: 'invest more in btc',
-        breadTextTwo: 'or ngmi, invest more',
-        breadTextThree: ' peeepoo peeepoo piiipii',
-        breadTextFour: 'bismillah',
-    }
+  const aboutContentOne = {
+    heading: "PRODUCTION",
+    breadTextOne: "Photography",
+    breadTextTwo: "Film",
+    breadTextThree: "Graphic design",
+    breadTextFour: "Music & sound",
+  };
 
-    const aboutContentTwo = {
-        heading: 'ETH IS TOXIC',
-        breadTextOne: 'wowowoaeaw',
-        breadTextTwo: 'allan was here and coded',
-        breadTextThree: ' wen yuga announcement',
-        breadTextFour: 'Petrus rocks',
-    }
+  const aboutContentTwo = {
+    heading: "BRANDING",
+    breadTextOne: "Logo design",
+    breadTextTwo: "Brand messaging",
+    breadTextThree: "Brand identity",
+    breadTextFour: "",
+  };
 
-    const aboutContentThree = {
-        heading: 'RUG ME SER',
-        breadTextOne: 'what is bTC ordinals',
-        breadTextTwo: 'ETH to 10k',
-        breadTextThree: ' I do stuff',
-        breadTextFour: 'This is my website',
-    }
+  const aboutContentThree = {
+    heading: "BUILDING",
+    breadTextOne: "Web development",
+    breadTextTwo: "UX/UI design",
+    breadTextThree: "",
+    breadTextFour: "",
+  };
+
+  const aboutContentFour = {
+    heading: "MANAGEMENT",
+    breadTextOne: "Social media management",
+    breadTextTwo: "",
+    breadTextThree: "",
+    breadTextFour: "",
+  };
 
   return (
-<>
-<div className='md:flex md:flex-row md:justify-center md:py-20 text-center'>
+    <>
+      <div className="max-w-screen text-center md:flex md:flex-row md:justify-around md:py-20">
+        <About content={aboutContentOne} />
+        <About content={aboutContentTwo} />
+        <About content={aboutContentThree} />
+        <About content={aboutContentFour} />
+      </div>
+    </>
+  );
+};
 
-<About content={aboutContentOne}/>
-<About content={aboutContentTwo}/>
-<About content={aboutContentThree}/>
-</div>
-
-</>
-  )
-}
-
-export default AboutSection
+export default AboutSection;

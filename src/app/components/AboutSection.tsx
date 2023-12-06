@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import About from "./About";
 import Link from "next/link";
@@ -42,45 +42,49 @@ const AboutSection = () => {
     <>
       {!isMobile && (
         <>
-          <div className="max-w-screen text-center md:flex md:flex-row md:justify-around md:py-20">
-            <About content={aboutContentOne} />
-            <About content={aboutContentTwo} />
-            <About content={aboutContentThree} />
-            <About content={aboutContentFour} />
-          </div>
-          <div className="flex justify-center p-12 text-sm">
-            <p>
-              is what you are looking for not on the list?{" "}
-              <Link href={"/contact"} className="underline">
-                ask us anyway,
-              </Link>{" "}
-              we basically do everything.
-            </p>
-          </div>{" "}
+          <section>
+            <div className="max-w-screen text-center md:flex md:flex-row md:justify-around md:py-20">
+              <About content={aboutContentOne} />
+              <About content={aboutContentTwo} />
+              <About content={aboutContentThree} />
+              <About content={aboutContentFour} />
+            </div>
+            <div className="flex justify-center p-12 text-sm">
+              <p>
+                is what you are looking for not on the list?{" "}
+                <Link href={"/contact"} className="underline">
+                  ask us anyway,
+                </Link>{" "}
+                we basically do everything.
+              </p>
+            </div>{" "}
+          </section>
         </>
       )}
 
       {isMobile && (
         <>
-          <div className="max-w-screen gap-8 text-center">
-            <div className="flex justify-center">
-              <About content={aboutContentOne} />
-              <About content={aboutContentTwo} />
+          <section>
+            <div className="max-w-screen gap-8 text-center">
+              <div className="flex justify-center">
+                <About content={aboutContentOne} />
+                <About content={aboutContentTwo} />
+              </div>
+              <div className="flex justify-center">
+                <About content={aboutContentThree} />
+                <About content={aboutContentFour} />
+              </div>
             </div>
-            <div className="flex justify-center">
-              <About content={aboutContentThree} />
-              <About content={aboutContentFour} />
+            <div className="flex justify-center px-8  py-8 text-center text-sm">
+              <p>
+                is what you are looking for not on the list?{" "}
+                <Link href={"/contact"} className="underline">
+                  ask us anyway,
+                </Link>{" "}
+                we basically do everything.
+              </p>
             </div>
-          </div>
-          <div className="flex justify-center px-8  py-8 text-center text-sm">
-            <p>
-              is what you are looking for not on the list?{" "}
-              <Link href={"/contact"} className="underline">
-                ask us anyway,
-              </Link>{" "}
-              we basically do everything.
-            </p>
-          </div>
+          </section>
         </>
       )}
     </>

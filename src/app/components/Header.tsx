@@ -8,7 +8,7 @@ const Header = () => {
     <header className="w-full md:px-8">
       <div className="flex items-center justify-between p-4">
       <Link href={'/'}>
-        <Image src={"/ozpelogo.png"} height={48} width={48} alt="logo"></Image>
+        <Image src={"/ozpelogo.png"} height={36} width={36} alt="logo"></Image>
         </Link>
         
         <h1 className="text-2xl md:text-4xl">OZPE AGENCY</h1>

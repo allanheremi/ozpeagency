@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 html {
-    font-family: 'Helvetica Neue', sans-serif;
-                                                
+  font-family: "Helvetica Neue", sans-serif;
+  max-width: 100%;
+}
+
+body {
+box-sizing: border-box;
 }

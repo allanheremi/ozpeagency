@@ -12,8 +12,8 @@ const Clients = () => {
         <div className="object-full w-full p-4 pb-4">
           <Image
             src={"/boredkitchen2.png"}
-            width={400}
-            height={400}
+            width={300}
+            height={300}
             alt="boredkitchen"
             className="h-48 w-full object-cover"
           />
@@ -25,8 +25,8 @@ const Clients = () => {
         <div className="object-full w-full p-4 pt-0 pb-4">
           <Image
             src={"/boredkitchen3.png"}
-            width={400}
-            height={400}
+            width={300}
+            height={300}
             alt="boredkitchen"
             className="h-48 w-full object-cover"
           />
@@ -38,7 +38,7 @@ const Clients = () => {
         <div className="object-full w-full p-4 pb-4">
           <Image
             src={"/boredkitchen1.png"}
-            width={400}
+            width={300}
             height={400}
             alt="boredkitchen"
             className="h-48 w-full object-cover"

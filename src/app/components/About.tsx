@@ -12,12 +12,22 @@ type ContentProps = {
 
 const About = ({ content }: ContentProps) => {
   return (
-    <div className="flex flex-col p-4 whitespace-nowrap">
-      <h4 className="w-full pb-2 text-lg text-left">{content.heading}</h4>
-      <p className="w-1/4 text-sm text-white/80 text-left">{content.breadTextOne}</p>
-      <p className="w-1/4  text-sm text-white/80 text-left">{content.breadTextTwo}</p>
-      <p className="w-1/4  text-sm text-white/80 text-left">{content.breadTextThree}</p>
-      <p className="w-1/4  text-sm text-white/80 text-left">{content.breadTextFour}</p>
+    <div>
+      <div className="flex flex-col whitespace-nowrap p-4">
+        <h4 className="w-full pb-2 text-left text-lg">{content.heading}</h4>
+        <p className="w-1/4 text-left text-sm text-white/80">
+          {content.breadTextOne}
+        </p>
+        <p className="w-1/4  text-left text-sm text-white/80">
+          {content.breadTextTwo}
+        </p>
+        <p className="w-1/4  text-left text-sm text-white/80">
+          {content.breadTextThree}
+        </p>
+        <p className="w-1/4  text-left text-sm text-white/80">
+          {content.breadTextFour}
+        </p>
+      </div>
     </div>
   );
 };

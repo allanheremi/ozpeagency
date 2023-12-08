@@ -7,7 +7,7 @@ const page = () => {
     <>
       <div className="overflow-hidden max-h-screen max-w-screen">
         <Header />
-        <div className="md:p-18 flex h-[76vh] items-center justify-center p-8 ">
+        <div className="md:p-18 flex h-[66vh]  md:h-[76vh] items-center justify-center p-8 ">
           <div>
 
             <div className="flex flex-col gap-16 md:gap-4 px-4 md:px-12">

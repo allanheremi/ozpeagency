@@ -9,7 +9,7 @@ const page = () => {
     <div className="overflow-hidden max-h-screen max-w-screen">
 
       <Header />
-      <section className="flex h-[76vh] flex-col items-center justify-center gap-16 p-8">
+      <section className="flex h-[66vh] md:h-[76vh] flex-col items-center justify-center gap-16 p-8">
         <h1 className=" text-2xl">CONTACT US</h1>
         <div className="text-center">
           <address className="flex flex-col">

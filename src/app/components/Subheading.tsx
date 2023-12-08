@@ -6,7 +6,7 @@ const text =
 const Subheading = () => {
   return (
     <div>
-      <h1 className="p-4 px-8 h-[100vh] text-2xl bg-white text-black flex items-center">
+      <h1 className="p-4 px-8 md:px-16 h-[100vh] text-2xl bg-white text-black flex items-center">
         {text.toUpperCase()}
       </h1>
     </div>

@@ -35,7 +35,7 @@ const Header = () => {
                 height={36}
                 width={36}
                 alt="logo"
-                className="scale-100 transform active:scale-110"
+
               />
             </Link>
             <h1 className="text-2xl md:text-3xl">OZPE AGENCY</h1>

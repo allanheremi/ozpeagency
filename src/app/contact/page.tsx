@@ -17,7 +17,8 @@ const page = () => {
     toast.error(message);
   };
   const showToastSuccess = (message: string) => {
-    toast.success(message);
+    
+    return toast.success(message);
   };
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {

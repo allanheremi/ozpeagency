@@ -20,8 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+     
+      
+      <body className={`bg-black font-sans text-white ${inter.variable}`}>
       <Toaster
-        reverseOrder={true}
         position="top-left"
         toastOptions={{
           error: {
@@ -41,8 +43,6 @@ export default function RootLayout({
           },
         }}
       />
-      
-      <body className={`bg-black font-sans text-white ${inter.variable}`}>
         {children}
       </body>
     </html>

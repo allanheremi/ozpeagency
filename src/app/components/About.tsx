@@ -15,16 +15,16 @@ const About = ({ content }: ContentProps) => {
     <div>
       <div className="flex flex-col whitespace-nowrap p-4">
         <h4 className="w-full pb-2 text-left text-lg">{content.heading}</h4>
-        <p className="w-1/4 text-left text-sm text-white/80">
+        <p className="w-2/5 text-left text-sm text-white/80">
           {content.breadTextOne}
         </p>
-        <p className="w-1/4  text-left text-sm text-white/80">
+        <p className="w-2/5 text-left text-sm text-white/80">
           {content.breadTextTwo}
         </p>
-        <p className="w-1/4  text-left text-sm text-white/80">
+        <p className="w-2/5 text-left text-sm text-white/80">
           {content.breadTextThree}
         </p>
-        <p className="w-1/4  text-left text-sm text-white/80">
+        <p className="w-2/5 text-left text-sm text-white/80">
           {content.breadTextFour}
         </p>
       </div>

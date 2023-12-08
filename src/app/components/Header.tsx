@@ -57,7 +57,7 @@ const Header = () => {
                 <div className="animate-fadeInUpShort absolute right-0 top-full flex flex-col justify-center text-center text-black">
                   <div className="text-xl">
                     <div className=" border-black bg-white p-2 px-4 hover:bg-white/90 active:bg-white/60">
-                      <Link href={"/about"}>
+                      <Link href={"/"}>
                         <p>HOME</p>
                       </Link>
                     </div>

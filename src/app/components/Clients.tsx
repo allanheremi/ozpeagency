@@ -8,7 +8,7 @@ const Clients = () => {
       <div className="bg-white text-black p-8 h-[88vh] flex grid-cols-2 flex-col justify-between">
         <h1 className="flex justify-center text-2xl md:py-8 py-16">CLIENTS & PARTNERS</h1>
         <div className="flex justify-center grow">
-          <div className="grid grid-cols-3 gap-x-24 gap-y-24 md:gap-y-16 md:gap-x-48  bg-white text-center text-black md:mb-4 grow">
+          <div className="grid grid-cols-3 gap-x-24 gap-y-24 md:gap-y-16 md:gap-x-48  bg-white text-center text-black md:mb-4">
             <div>
               <Image
                 src={"/BK_Black_Logo.png"}

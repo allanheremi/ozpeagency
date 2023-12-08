@@ -42,14 +42,15 @@ const AboutSection = () => {
     <>
       {!isMobile && (
         <>
-          <section>
-            <div className="max-w-screen text-center md:flex md:flex-row md:justify-around md:py-20">
+          <section className="h-screen flex items-center flex-col justify-around">
+            <h1 className="text-2xl">WHAT WE PROVIDE</h1>
+            <div className="max-w-screen flex flex-row justify-between text-center gap-8">
               <About content={aboutContentOne} />
               <About content={aboutContentTwo} />
               <About content={aboutContentThree} />
               <About content={aboutContentFour} />
             </div>
-            <div className="flex justify-center p-12 text-sm">
+            <div className="flex justify-center text-sm">
               <p>
                 is what you are looking for not on the list?{" "}
                 <Link href={"/contact"} className="underline">
@@ -64,8 +65,8 @@ const AboutSection = () => {
 
       {isMobile && (
         <>
-          <section className="h-screen"> 
-            <div className="max-w-screen text-center h-[80vh] flex justify-center flex-col gap-y-12">
+          <section className="h-screen">
+            <div className="max-w-screen flex h-[80vh] flex-col justify-center gap-y-12 text-center">
               <div className="flex justify-around">
                 <About content={aboutContentOne} />
                 <About content={aboutContentTwo} />

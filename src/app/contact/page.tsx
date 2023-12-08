@@ -78,17 +78,17 @@ const page = () => {
           </div> */}
 
           <form
-          // eslint-disable-next-line
+            // eslint-disable-next-line
             ref={form as any}
             onSubmit={sendEmail}
-            className="m-4 flex h-full w-2/3 flex-col justify-center gap-8 rounded-lg  bg-black p-4 py-2 text-white"
+            className="m-4 flex h-full w-2/3 flex-col justify-center gap-8  bg-black p-4 py-2 text-white"
           >
             <div className="flex flex-col">
               <label className="text-xl">NAME</label>
               <input
                 type="text"
                 name="user_name"
-                className=" border-b border-white bg-black  text-white  focus:outline-none active:bg-black"
+                className=" border-b border-black border-b-white bg-black  text-white  focus:outline-none active:bg-black"
                 value={userName}
                 onChange={(e) => setUserName(e.target.value)}
                 autoComplete="off"
@@ -100,7 +100,7 @@ const page = () => {
                 <input
                   type="email"
                   name="user_email"
-                  className=" border-b border-white bg-black  text-white  focus:outline-none"
+                  className=" border-b border-black border-b-white bg-black  text-white  focus:outline-none "
                   onChange={(e) => setUserEmail(e.target.value)}
                   autoComplete="off"
                 />

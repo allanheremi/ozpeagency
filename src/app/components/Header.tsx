@@ -61,14 +61,15 @@ const Header = () => {
                         <p>HOME</p>
                       </Link>
                     </div>
-                    <div className="bg-white border-t border-black/50 p-2 px-4 hover:bg-white/90 active:bg-white/60 ">
-                      <Link href={"/contact"}>
-                        <p className="w-full">CONTACT</p>
-                      </Link>
-                    </div>
+         
                     <div className="border-t border-black/50 bg-white p-2 px-4 hover:bg-white/90 active:bg-white/60">
                       <Link href={"/about"}>
                         <p>ABOUT</p>
+                      </Link>
+                    </div>
+                    <div className="bg-white border-t border-black/50 p-2 px-4 hover:bg-white/90 active:bg-white/60 ">
+                      <Link href={"/contact"}>
+                        <p className="w-full">CONTACT</p>
                       </Link>
                     </div>
                   </div>

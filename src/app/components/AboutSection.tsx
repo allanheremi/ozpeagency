@@ -53,7 +53,7 @@ const AboutSection = () => {
             <div className="flex justify-center text-sm">
               <p>
                 is what you are looking for not on the list?{" "}
-                <Link href={"/contact"} className="underline">
+                <Link href={"/contact"} className="underline active:text-white/60">
                   ask us anyway,
                 </Link>{" "}
                 we basically do everything.

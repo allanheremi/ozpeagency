@@ -7,6 +7,8 @@ import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
 import { useState } from "react";
 
+
+
 const Header = () => {
   const [showDropDown, setShowDropDown] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
@@ -14,27 +16,41 @@ const Header = () => {
   return (
     <>
       {!isMobile && (
-        <header className="relative w-full md:px-8 h-[12vh]">
+        <header className="relative h-[12vh] w-full md:px-8">
           <div className="flex items-center justify-between p-4">
             <Link href={"/"}>
-              <Image src={"/ozpelogo.png"} height={36} width={36} alt="logo" />
+              <Image src={"/ozpelogo.png"} height={36} width={36} alt="logo" className="transform scale-100 active:scale-110"/>
             </Link>
-            <h1 className="text-2xl md:text-4xl">OZPE AGENCY</h1>
+            <h1 className="text-2xl md:text-3xl">OZPE AGENCY</h1>
             <div className="relative">
-              {!showDropDown ? <MenuIcon
-                fontSize="large"
-                className="hover:cursor-pointer"
-                onClick={() => setShowDropDown(!showDropDown)}
-              /> : <Close fontSize="large" className="hover:cursor-pointer" onClick={() => setShowDropDown(!showDropDown)}/>}
+              {!showDropDown ? (
+                <MenuIcon
+                  fontSize="large"
+                  className="hover:cursor-pointer"
+                  onClick={() => setShowDropDown(!showDropDown)}
+                />
+              ) : (
+                <Close
+                  fontSize="large"
+                  className="hover:cursor-pointer"
+                  onClick={() => setShowDropDown(!showDropDown)}
+                />
+              )}
               {showDropDown && (
-                
-                <div className="absolute right-0 top-full gap-4 bg-white p-2 text-2xl text-black flex flex-col items-center rounded-sm">
-                  <Link href={"/contact"}>
-                    <p>Contact</p>
-                  </Link>
-                  <Link href={"/about"}>
-                    <p>About</p>
-                  </Link>
+                <div className="animate-fadeInUp absolute right-0 top-full flex flex-col justify-center text-center text-black">
+                  <div className="text-xl">
+                    <div className="bg-white p-2 px-4 hover:bg-white/90 active:bg-white/60 ">
+                      <Link href={"/contact"}>
+                        <p className="w-full">Contact</p>
+                      </Link>
+                    </div>
+
+                    <div className="border-t border-black bg-white p-2 px-4 hover:bg-white/90 active:bg-white/60">
+                      <Link href={"/about"}>
+                        <p>About</p>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               )}
             </div>
@@ -53,14 +69,14 @@ const Header = () => {
                 alt="logo"
               ></Image>
             </Link>
-            <h1 className="text-2xl md:text-4xl">OZPE AGENCY</h1>
+            <h1 className="text-2xl ">OZPE AGENCY</h1>
             <MenuIcon
               fontSize="large"
               className="hover:cursor-pointer"
               onClick={() => setShowMenu(!showMenu)}
             />
             {showMenu && (
-              <div className="fixed left-0 top-0 h-full w-full bg-white overflow-hidden z-10">
+              <div className="fixed left-0 top-0 z-10 h-full w-full overflow-hidden bg-white">
                 <div className="absolute right-4 top-4">
                   <Close
                     onClick={() => setShowMenu(false)}

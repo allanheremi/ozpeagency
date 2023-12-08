@@ -11,7 +11,7 @@ const Footer = () => {
             height={42}
             width={42}
             alt="instagram"
-            className="hover:cursor-pointer"
+            className="hover:cursor-pointer transform scale-100 active:scale-110"
           />{" "}
         </a>
         <a href="https://twitter.com/al3xc00p3r" target="_blank">
@@ -20,7 +20,7 @@ const Footer = () => {
             height={42}
             width={42}
             alt="X"
-            className="hover:cursor-pointer"
+            className="hover:cursor-pointer transform scale-100 active:scale-110"
           />
         </a>
 
@@ -33,7 +33,7 @@ const Footer = () => {
             height={42}
             width={42}
             alt="linkedin"
-            className="hover:cursor-pointer"
+            className="hover:cursor-pointer transform scale-100 active:scale-110"
           />
         </a>
       </div>

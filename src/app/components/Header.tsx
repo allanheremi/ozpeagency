@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <>
       {!isMobile && (
-        <header className="relative h-[12vh] w-full md:px-8">
+        <header className="relative h-[12vh] w-full px-8">
           <div className="flex items-center justify-between p-4">
             <Link href={"/"}>
               <Image
@@ -81,7 +81,7 @@ const Header = () => {
       )}
 
       {isMobile && (
-        <header className="w-full md:px-8">
+        <header className="w-full">
           <div className="flex items-center justify-between p-4">
             <Link href={"/"}>
               <Image

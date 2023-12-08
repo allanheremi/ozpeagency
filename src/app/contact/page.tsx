@@ -1,17 +1,32 @@
 "use client";
 import Header from "../components/Header";
-import Image from "next/image";
 import Footer from "../components/Footer";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
+// import MailOutlineIcon from "@mui/icons-material/MailOutline";
+// import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
+import React, { useRef, useState } from "react";
+import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
+import { toast, ToastOptions } from "react-hot-toast";
 
 const page = () => {
+  const [userName, setUserName] = useState("");
+  const [userEmail, setUserEmail] = useState("");
+  const [userMessage, setUserMessage] = useState("");
   const form = useRef();
+
+  const showToastFail = (message: string) => {
+    toast.error(message);
+  };
+  const showToastSuccess = (message: string) => {
+    toast.success(message);
+  };
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (userName.length < 3 || userEmail.length < 3 || userMessage.length < 3) {
+      showToastFail("You overlooked something...");
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -21,22 +36,27 @@ const page = () => {
         "WAqglW3eDzHnrK0xy",
       )
       .then(
-        (result: any) => {
-          console.log(result.text);
+        // eslint-disable-next-line
+        (result: EmailJSResponseStatus) => {
+          // eslint-disable-next-line
+          console.log(result.text as string);
+          showToastSuccess("Message sent");
         },
-        (error: any) => {
-          console.log(error.text);
+        // eslint-disable-next-line
+        (error: EmailJSResponseStatus) => {
+          // eslint-disable-next-line
+          console.log(error.text as string);
         },
       );
   };
 
   return (
     <>
-      <div className="max-w-screen max-h-screen overflow-hidden">
+      <div className="max-w-screen max-h-screen">
         <Header />
-        <section className="flex h-[66vh] flex-col items-center justify-center gap-2 md:h-[76vh]">
-          <h1 className=" text-left text-2xl">CONTACT US</h1>
-          <div className="text-left">
+        <section className="flex h-[68vh] flex-col items-center justify-center gap-2 md:h-[100vh]">
+          {/* <h1 className=" text-left text-2xl">CONTACT US</h1> */}
+          {/* <div className="text-left">
             <address className="flex flex-col">
               <div className="flex flex-col justify-around gap-2">
                 <a
@@ -54,38 +74,59 @@ const page = () => {
                   +46 [Coming soon]{" "}
                 </a>
               </div>
-              <form
-                ref={form as any}
-                onSubmit={sendEmail}
-                className="flex flex-col gap-1 py-2 text-white"
-              >
-                <label>Name</label>
-                <input
-                  type="text"
-                  name="user_name"
-                  className="rounded-sm border-2 text-black border-black/40"
-                />
-                <label>Email</label>
+            </address>
+          </div> */}
+
+          <form
+          // eslint-disable-next-line
+            ref={form as any}
+            onSubmit={sendEmail}
+            className="m-4 flex h-full w-2/3 flex-col justify-center gap-8 rounded-lg  bg-black p-4 py-2 text-white"
+          >
+            <div className="flex flex-col">
+              <label className="text-xl">NAME</label>
+              <input
+                type="text"
+                name="user_name"
+                className=" border-b border-white bg-black  text-white placeholder:text-white/20 focus:outline-none active:bg-black"
+                value={userName}
+                onChange={(e) => setUserName(e.target.value)}
+                autoComplete="off"
+              />
+            </div>
+            <div>
+              <div className="flex flex-col">
+                <label className="text-xl">EMAIL</label>
                 <input
                   type="email"
                   name="user_email"
-                  className="rounded-sm border-2 text-black border-black/40"
+                  className=" border-b border-white bg-black  text-white placeholder:text-white/20 focus:outline-none"
+                  onChange={(e) => setUserEmail(e.target.value)}
+                  autoComplete="off"
                 />
-                <label className="rounded-sm">Message</label>
+              </div>
+            </div>
+            <div>
+              <div className="flex flex-col gap-4">
+                <label className="text-xl">MESSAGE</label>
                 <textarea
                   name="message"
-                  className="rounded-sm border-2 border-black/40 text-black "
+                  className="rounded-md border border-white bg-black p-1  text-white focus:outline-none"
                   cols={28}
                   rows={3}
+                  onChange={(e) => setUserMessage(e.target.value)}
+                  autoComplete="off"
                 />
-                <input
-                  type="submit"
-                  value="Send"
-                  className="rounded-sm bg-white/40 hover:cursor-pointer active:bg-white/20"
-                />
-              </form>
-            </address>
-          </div>
+                <div className="flex w-full justify-center">
+                  <input
+                    type="submit"
+                    value="SUBMIT"
+                    className="w-fit rounded-md border border-white bg-black px-2 py-1 text-xl hover:cursor-pointer active:bg-white/20 "
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
         </section>
         <Footer />
       </div>

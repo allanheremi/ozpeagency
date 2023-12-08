@@ -1,5 +1,5 @@
 import "~/styles/globals.css";
-
+import { Toaster } from "react-hot-toast";
 import { Inter } from "next/font/google";
 
 const inter = Inter({
@@ -20,7 +20,31 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans bg-black text-white ${inter.variable}`}>{children}</body>
+      <Toaster
+        reverseOrder={true}
+        position="top-left"
+        toastOptions={{
+          error: {
+            style: {
+              background: "black",
+              color: "white",
+            },
+            iconTheme: { primary: "black", secondary: "white" },
+          },
+
+          success: {
+            style: {
+              background: "black",
+              color: "white",
+            },
+            iconTheme: { primary: "black", secondary: "white" },
+          },
+        }}
+      />
+      
+      <body className={`bg-black font-sans text-white ${inter.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }

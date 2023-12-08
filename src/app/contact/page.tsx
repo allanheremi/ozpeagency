@@ -17,7 +17,6 @@ const page = () => {
     toast.error(message);
   };
   const showToastSuccess = (message: string) => {
-    
     return toast.success(message);
   };
 

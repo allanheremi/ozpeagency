@@ -88,7 +88,7 @@ const page = () => {
               <input
                 type="text"
                 name="user_name"
-                className=" border-b border-white bg-black  text-white placeholder:text-white/20 focus:outline-none active:bg-black"
+                className=" border-b border-white bg-black  text-white  focus:outline-none active:bg-black"
                 value={userName}
                 onChange={(e) => setUserName(e.target.value)}
                 autoComplete="off"
@@ -100,7 +100,7 @@ const page = () => {
                 <input
                   type="email"
                   name="user_email"
-                  className=" border-b border-white bg-black  text-white placeholder:text-white/20 focus:outline-none"
+                  className=" border-b border-white bg-black  text-white  focus:outline-none"
                   onChange={(e) => setUserEmail(e.target.value)}
                   autoComplete="off"
                 />

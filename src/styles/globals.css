@@ -8,23 +8,64 @@ html {
 }
 
 body {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+.animate-fadeInUp {
+  animation: fadeInUp 0.7s ease-in-out;
+}
+
+.animate-fadeInUpShort {
+  animation: fadeInUpShort 0.5s ease-in-out;
+}
+
+.animate-fadeInUpLong {
+  animation: fadeInUp 0.7s ease-out;
+}
 
 @keyframes fadeInUp {
   from {
-    opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-100%);
   }
   to {
-    opacity: 1;
     transform: translateY(0);
   }
 }
 
-.animate-fadeInUp {
-  animation: fadeInUp 0.35s ease-in-out;
+@keyframes fadeInUpShort {
+  from {
+    transform: translateY(-20%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
+.slide-right,
+.slide-left {
+  width: 100%;
+}
 
+.slide-right {
+  animation: 1.4s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.slide-left {
+  animation: 1.4s slide-left;
+}
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}

@@ -64,18 +64,18 @@ const AboutSection = () => {
 
       {isMobile && (
         <>
-          <section>
-            <div className="max-w-screen gap-8 text-center">
-              <div className="flex justify-center">
+          <section className="h-screen"> 
+            <div className="max-w-screen text-center h-[80vh] flex justify-center flex-col gap-y-12">
+              <div className="flex justify-around">
                 <About content={aboutContentOne} />
                 <About content={aboutContentTwo} />
               </div>
-              <div className="flex justify-center">
+              <div className="flex justify-around">
                 <About content={aboutContentThree} />
                 <About content={aboutContentFour} />
               </div>
             </div>
-            <div className="flex justify-center px-8  py-8 text-center text-sm">
+            <div className="flex justify-center px-8 text-center text-sm">
               <p>
                 is what you are looking for not on the list?{" "}
                 <Link href={"/contact"} className="underline">

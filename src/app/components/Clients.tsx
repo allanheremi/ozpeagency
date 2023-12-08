@@ -5,8 +5,8 @@ import Image from "next/image";
 const Clients = () => {
   return (
     <>
-      <div className="bg-white text-black p-8">
-        <h1 className="flex justify-center text-2xl pt-2 pb-12">CLIENTS</h1>
+      <div className="bg-white text-black p-8 h-[50vh] md:h-[100vh] flex justify-center flex-col">
+        <h1 className="flex justify-center text-2xl">CLIENTS</h1>
         <div className="flex justify-center">
           <div className="grid h-40 grid-cols-3 gap-x-24 md:gap-x-48  bg-white text-center text-black">
             <div>

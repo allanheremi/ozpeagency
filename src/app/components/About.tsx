@@ -12,7 +12,7 @@ type ContentProps = {
 
 const About = ({ content }: ContentProps) => {
   return (
-    <div>
+    <div className="h-[30vh] flex items-center gap-8">
       <div className="flex flex-col whitespace-nowrap p-4">
         <h4 className="w-full pb-2 text-left text-lg">{content.heading}</h4>
         <p className="w-1/4 text-left text-sm text-white/80">

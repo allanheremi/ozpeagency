@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <>
       {!isMobile && (
-        <header className="relative w-full md:px-8">
+        <header className="relative w-full md:px-8 h-[12vh]">
           <div className="flex items-center justify-between p-4">
             <Link href={"/"}>
               <Image src={"/ozpelogo.png"} height={36} width={36} alt="logo" />

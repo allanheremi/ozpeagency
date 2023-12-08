@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="p-4">
+    <footer className="p-4 h-[12vh]">
       <div className="flex justify-around p-4">
         <a href="https://www.instagram.com/ozpeagency/" target="_blank">
           <Image

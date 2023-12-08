@@ -7,7 +7,7 @@ const page = () => {
     <>
       <div>
         <Header />
-        <div className="md:p-18 flex h-[calc(50vh)] items-center justify-center p-8 ">
+        <div className="md:p-18 flex items-center justify-center p-8 ">
           <div>
             <h1 className="py-4 text-3xl">ABOUT US</h1>
             <p className="text-white/80">

@@ -11,7 +11,7 @@ const page = () => {
           <div>
             <div className="flex flex-col gap-16 px-4 md:gap-4 md:p-12">
               <div>
-                <h1 className="lg:text-8xl md:text-7xl text-4xl">ABOUT US</h1>
+                <h1 className=" md:text-7xl text-4xl">ABOUT US</h1>
               </div>
               <div>
                 <p className="text-white/80 text-3xl md:text-5xl lg:text-7xl">

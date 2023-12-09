@@ -88,7 +88,7 @@ const page = () => {
               <input
                 type="text"
                 name="user_name"
-                className=" border-b border-white bg-black  text-white  focus:outline-none active:bg-black text-xl "
+                className=" border-b border-white bg-black  text-white/80  focus:outline-none active:bg-black text-xl "
                 value={userName}
                 onChange={(e) => setUserName(e.target.value)}
                 autoComplete="off"
@@ -102,7 +102,7 @@ const page = () => {
                 <input
                   type="email"
                   name="user_email"
-                  className=" border-b border-t-white bg-black  text-white  focus:outline-none text-xl "
+                  className=" border-b border-t-white bg-black  text-white/80  focus:outline-none text-xl "
                   onChange={(e) => setUserEmail(e.target.value)}
                   autoComplete="off"
                 />
@@ -115,7 +115,7 @@ const page = () => {
                 </label>
                 <textarea
                   name="message"
-                  className="rounded-md border text-xl border-white bg-black p-1  text-white focus:outline-none"
+                  className="rounded-md border text-xl border-white bg-black p-1  text-white/80 focus:outline-none"
                   cols={28}
                   rows={5}
                   onChange={(e) => setUserMessage(e.target.value)}

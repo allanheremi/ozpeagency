@@ -1,13 +1,13 @@
 import "~/styles/globals.css";
 import { Toaster } from "react-hot-toast";
-import { Inter, Young_Serif } from "next/font/google";
+import { Inter, Young_Serif, League_Gothic } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
 });
 
-const youngSerif = Young_Serif({
+const leagueGothic = League_Gothic({
   subsets: ["latin"],
   variable: "--font-sans",
   weight: '400',
@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
      
       
-      <body className={`bg-black font-sans text-white ${youngSerif.variable}`}>
+      <body className={`bg-black font-sans text-white ${leagueGothic.variable}`}>
       <Toaster
         position="top-left"
         toastOptions={{

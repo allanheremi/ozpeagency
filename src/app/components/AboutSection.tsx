@@ -61,7 +61,7 @@ const AboutSection = () => {
             <div className="max-w-screen flex h-[80vh] flex-col justify-center gap-y-24 py-24 text-center">
               <h1 className="text-5xl">WHAT WE DO</h1>
 
-              <div className=" flex h-full justify-center px-8">
+              <div className=" flex h-full justify-center px-12">
                 <div className="flex w-1/2 flex-col">
                   <div className="grid-cols-2 grid-rows-2">
                     <About content={aboutContentOne} />

@@ -1,11 +1,17 @@
 import "~/styles/globals.css";
 import { Toaster } from "react-hot-toast";
-import { Inter } from "next/font/google";
+import { Inter, Young_Serif } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
 });
+
+const youngSerif = Young_Serif({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  weight: '400',
+})
 
 export const metadata = {
   title: "Ozpe Agency",
@@ -22,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
      
       
-      <body className={`bg-black font-sans text-white ${inter.variable}`}>
+      <body className={`bg-black font-sans text-white ${youngSerif.variable}`}>
       <Toaster
         position="top-left"
         toastOptions={{

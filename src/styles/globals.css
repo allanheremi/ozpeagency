@@ -7,6 +7,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.fontHelvetica {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
 ::-webkit-scrollbar {
   visibility: hidden;
   width: 0;

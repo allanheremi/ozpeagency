@@ -32,13 +32,13 @@ const Header = () => {
             <Link href={"/"}>
               <Image
                 src={"/ozpelogo.png"}
-                height={36}
-                width={36}
+                height={48}
+                width={48}
                 alt="logo"
 
               />
             </Link>
-            <h1 className="text-2xl md:text-3xl">OZPE AGENCY</h1>
+            <h1 className="text-2xl md:text-3xl fontHelvetica">OZPE AGENCY</h1>
             <div className="relative">
               {!showDropDown ? (
                 <MenuIcon
@@ -58,18 +58,18 @@ const Header = () => {
                   <div className="text-xl">
                     <div className=" border-black bg-white p-2 px-4 hover:bg-white/90 active:bg-white/60">
                       <Link href={"/"}>
-                        <p>HOME</p>
+                        <p className="text-4xl">HOME</p>
                       </Link>
                     </div>
          
                     <div className="border-t border-black/50 bg-white p-2 px-4 hover:bg-white/90 active:bg-white/60">
                       <Link href={"/about"}>
-                        <p>ABOUT</p>
+                        <p className="text-4xl">ABOUT</p>
                       </Link>
                     </div>
                     <div className="bg-white border-t border-black/50 p-2 px-4 hover:bg-white/90 active:bg-white/60 ">
                       <Link href={"/contact"}>
-                        <p className="w-full">CONTACT</p>
+                        <p className="text-4xl">CONTACT</p>
                       </Link>
                     </div>
                   </div>
@@ -86,12 +86,12 @@ const Header = () => {
             <Link href={"/"}>
               <Image
                 src={"/ozpelogo.png"}
-                height={36}
-                width={36}
+                height={40}
+                width={40}
                 alt="logo"
               ></Image>
             </Link>
-            <h1 className="text-2xl ">OZPE AGENCY</h1>
+            <h1 className="text-2xl fontHelvetica">OZPE AGENCY</h1>
             <MenuIcon
               fontSize="large"
               className="hover:cursor-pointer"

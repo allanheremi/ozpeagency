@@ -8,16 +8,16 @@ const Footer = () => {
         {/* <a href="https://www.instagram.com/ozpeagency/" target="_blank"> */}
           <Image
             src={"/instagramicon.png"}
-            height={42}
-            width={42}
+            height={52}
+            width={52}
             alt="instagram"
           />{" "}
         {/* </a> */}
         {/* <a href="https://twitter.com/al3xc00p3r" target="_blank"> */}
           <Image
             src={"/X.png"}
-            height={42}
-            width={42}
+            height={52}
+            width={52}
             alt="X"
           />
         {/* </a> */}
@@ -28,8 +28,8 @@ const Footer = () => {
         > */}
           <Image
             src={"/linkedin.png"}
-            height={42}
-            width={42}
+            height={52}
+            width={52}
             alt="linkedin"
           />
         {/* </a> */}

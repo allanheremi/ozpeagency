@@ -81,14 +81,14 @@ const page = () => {
             // eslint-disable-next-line
             ref={form as any}
             onSubmit={sendEmail}
-            className="m-4 flex h-full w-2/3 flex-col justify-center gap-8  bg-black p-4 py-2 text-white"
+            className=" flex h-full w-2/3 flex-col justify-center gap-8  bg-black text-white"
           >
             <div className="flex flex-col">
-              <label className="text-xl">NAME</label>
+              <label className="text-3xl md:text-4xl lg:text-5xl">NAME</label>
               <input
                 type="text"
                 name="user_name"
-                className=" border-b border-white bg-black  text-white  focus:outline-none active:bg-black"
+                className=" border-b border-white bg-black  text-white  focus:outline-none active:bg-black text-xl "
                 value={userName}
                 onChange={(e) => setUserName(e.target.value)}
                 autoComplete="off"
@@ -96,11 +96,13 @@ const page = () => {
             </div>
             <div>
               <div className="flex flex-col">
-                <label className="text-xl">EMAIL</label>
+                <label className="text-3xl md:text-4xl lg:text-5xl">
+                  EMAIL
+                </label>
                 <input
                   type="email"
                   name="user_email"
-                  className=" border-b border-t-white bg-black  text-white  focus:outline-none "
+                  className=" border-b border-t-white bg-black  text-white  focus:outline-none text-xl "
                   onChange={(e) => setUserEmail(e.target.value)}
                   autoComplete="off"
                 />
@@ -108,12 +110,14 @@ const page = () => {
             </div>
             <div>
               <div className="flex flex-col gap-4">
-                <label className="text-xl">MESSAGE</label>
+                <label className="text-3xl md:text-4xl lg:text-5xl">
+                  MESSAGE
+                </label>
                 <textarea
                   name="message"
-                  className="rounded-md border border-white bg-black p-1  text-white focus:outline-none"
+                  className="rounded-md border text-xl border-white bg-black p-1  text-white focus:outline-none"
                   cols={28}
-                  rows={3}
+                  rows={5}
                   onChange={(e) => setUserMessage(e.target.value)}
                   autoComplete="off"
                 />
@@ -121,7 +125,7 @@ const page = () => {
                   <input
                     type="submit"
                     value="SUBMIT"
-                    className="w-fit rounded-md border border-white bg-black px-2 py-1 text-xl hover:cursor-pointer active:bg-white/20 "
+                    className="w-fit rounded-md border border-white bg-black px-2 py-1 text-3xl hover:cursor-pointer active:bg-white/20 md:text-4xl lg:text-5xl "
                   />
                 </div>
               </div>

@@ -17,13 +17,13 @@ const About = ({ content }: ContentProps) => {
         <p className="w-full text-left text-xl md:text-3xl lg:text-4xl text-white/80">
           {content.breadTextOne}
         </p>
-        <p className="w-full text-left text-xl md:text-3xl text-white/80">
+        <p className="w-full text-left text-xl md:text-3xl lg:text-4xl text-white/80">
           {content.breadTextTwo}
         </p>
-        <p className="w-full text-left text-xl md:text-3xl text-white/80">
+        <p className="w-full text-left text-xl md:text-3xl lg:text-4xl text-white/80">
           {content.breadTextThree}
         </p>
-        <p className="w-full text-left text-xl md:text-3xl text-white/80">
+        <p className="w-full text-left text-xl md:text-3xl lg:text-4xl text-white/80">
           {content.breadTextFour}
         </p>
       </div>

@@ -15,19 +15,21 @@ const AboutSection = () => {
   };
 
   const aboutContentTwo = {
-    heading: "BRANDING",
-    breadTextOne: "creative direction",
-    breadTextTwo: "brand identity",
-    breadTextThree: "brand messaging",
-    breadTextFour: "logo design",
-  };
-
-  const aboutContentThree = {
     heading: "BUILDING",
     breadTextOne: "web development",
     breadTextTwo: "ux/ui design",
     breadTextThree: "",
     breadTextFour: "",
+  };
+
+  const aboutContentThree = {
+
+
+    heading: "BRANDING",
+    breadTextOne: "creative direction",
+    breadTextTwo: "brand identity",
+    breadTextThree: "brand messaging",
+    breadTextFour: "logo design",
   };
 
   const aboutContentFour = {
@@ -42,12 +44,12 @@ const AboutSection = () => {
     <>
       {!isMobile && (
         <>
-          <section className="flex h-screen flex-col items-center justify-around">
-            <h1 className="text-2xl">WHAT WE PROVIDE</h1>
+          <section className="flex h-screen flex-col items-center justify-around py-24">
+            <h1 className="text-2xl">WHAT WE DO</h1>
             <div className="max-w-screen flex flex-row justify-between gap-8 text-center">
               <About content={aboutContentOne} />
-              <About content={aboutContentTwo} />
               <About content={aboutContentThree} />
+              <About content={aboutContentTwo} />
               <About content={aboutContentFour} />
             </div>
             <div className="flex justify-center text-sm">
@@ -69,17 +71,25 @@ const AboutSection = () => {
       {isMobile && (
         <>
           <section className="h-screen">
-            <div className="max-w-screen flex h-[80vh] flex-col justify-center gap-y-12 text-center">
-              <h1 className="text-2xl">WHAT WE PROVIDE</h1>
-              <div className="flex justify-center">
-                <About content={aboutContentOne} />
-                <About content={aboutContentTwo} />
-              </div>
-              <div className="flex justify-center">
-                <About content={aboutContentThree} />
-                <About content={aboutContentFour} />
+            <div className="max-w-screen flex h-[80vh] flex-col justify-center gap-y-12 py-24 text-center">
+              <h1 className="text-2xl">WHAT WE DO</h1>
+
+              <div className=" flex justify-center h-full">
+                <div className="flex w-1/2 flex-col">
+                  <div className="grid-cols-2 grid-rows-2">
+                    <About content={aboutContentOne} />
+                    <About content={aboutContentTwo} />
+                  </div>
+                </div>
+                <div className="flex w-1/2 flex-col">
+                  <div className="grid-cols-2 grid-rows-2">
+                    <About content={aboutContentThree} />
+                    <About content={aboutContentFour} />
+                  </div>
+                </div>
               </div>
             </div>
+
             <div className="flex justify-center px-8 text-center text-sm">
               <p>
                 is what you are looking for not on the list?{" "}

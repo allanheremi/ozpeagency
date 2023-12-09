@@ -110,17 +110,17 @@ const Header = () => {
                   <div className="flex items-center justify-center flex-col gap-y-8">
                     <div className="w-[40vw]  text-center ">
                       <Link href={"/"}>
-                        <p className="text-2xl text-black  animate-slide-left slide-left">HOME</p>
+                        <p className="text-4xl  text-black  animate-slide-left slide-left">HOME</p>
                       </Link>
                     </div>
                     <div className="w-[40vw] text-center ">
                       <Link href={"/about"}>
-                        <p className="text-2xl text-black animate-slide-right slide-right ">ABOUT</p>
+                        <p className="text-4xl text-black animate-slide-right slide-right ">ABOUT</p>
                       </Link>
                     </div>
                     <div className="w-[40vw]  text-center ">
                       <Link href={"/contact"}>
-                        <p className="text-2xl text-black  animate-slide-left slide-left">CONTACT</p>
+                        <p className="text-4xl text-black  animate-slide-left slide-left">CONTACT</p>
                       </Link>
                     </div>
                   </div>

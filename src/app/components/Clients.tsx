@@ -56,7 +56,7 @@ const Clients = () => {
             CLIENTS
           </h1>
           <div className="flex grow items-center justify-center">
-            <div className="grid grid-cols-2 gap-x-24 gap-y-24 bg-white text-center text-black md:mb-4 md:grid-cols-4 md:gap-x-48 md:gap-y-12 lg:grid-cols-4">
+            <div className="grid grid-cols-4 gap-x-24 gap-y-24 bg-white text-center text-black md:mb-4 md:gap-x-48 md:gap-y-12 lg:grid-cols-4">
               <div>
                 <Image
                   src={"/BK_Black_Logo.png"}

@@ -14,7 +14,7 @@ const page = () => {
                 <h1 className=" text-6xl lg:text-7xl sm:text-4xl">ABOUT US</h1>
               </div>
               <div>
-                <p className="text-4xl text-white/80 md:text-5xl lg:text-6xl  sm:text-2xl">
+                <p className="text-4xl text-white/80 md:text-5xl lg:text-6xl sm:text-4xl">
                   FOUNDED IN 2023 BECAUSE COULDN'T GET A JOB AND SAID F**K IT.
                 </p>
               </div>

@@ -45,7 +45,7 @@ const AboutSection = () => {
         <>
           <section className="flex h-screen flex-col items-center justify-around gap-y-24 px-8 py-24 ">
             <h1 className="text-6xl lg:text-7xl">WHAT WE DO</h1>
-            <div className="max-w-screen flex flex-row justify-between gap-8 gap-x-24 text-center">
+            <div className="max-w-screen flex flex-row justify-between gap-8 lg:gap-x-24 text-center">
               <About content={aboutContentOne} />
               <About content={aboutContentThree} />
               <About content={aboutContentFour} />

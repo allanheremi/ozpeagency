@@ -54,7 +54,7 @@ const page = () => {
     <>
       <div className="max-w-screen max-h-screen">
         <Header />
-        <section className="flex h-[68vh] flex-col items-center justify-center gap-2 md:h-[100vh]">
+        <section className="flex h-[68vh] flex-col items-center justify-center gap-2 md:h-[100vh] sm:h-[150vh]">
           {/* <h1 className=" text-left text-2xl">CONTACT US</h1> */}
           {/* <div className="text-left">
             <address className="flex flex-col">

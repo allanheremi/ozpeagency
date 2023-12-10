@@ -81,7 +81,7 @@ const page = () => {
             // eslint-disable-next-line
             ref={form as any}
             onSubmit={sendEmail}
-            className=" flex h-full w-2/3 flex-col justify-center gap-8  bg-black text-white"
+            className=" flex h-full w-2/3 flex-col justify-center gap-6  bg-black text-white"
           >
             <div className="flex flex-col">
               <label className="text-2xl md:text-4xl lg:text-5xl">NAME</label>

@@ -52,19 +52,19 @@ const Header = () => {
                   <div className="text-xl">
                     <Link href={"/"}>
                       <div className=" border-black bg-white p-2 px-4 hover:bg-white/90 active:bg-white/60">
-                        <p className="text-4xl">HOME</p>
+                        <p className="text-4xl sm:text-2xl md:text-3xl">HOME</p>
                       </div>
                     </Link>
 
                     <Link href={"/about"}>
                       <div className="border-t border-black/50 bg-white p-2 px-4 hover:bg-white/90 active:bg-white/60">
-                        <p className="text-4xl">ABOUT</p>
+                        <p className="text-4xl sm:text-2xl md:text-3xl">ABOUT</p>
                       </div>
                     </Link>
 
                     <Link href={"/contact"}>
                       <div className="border-t border-black/50 bg-white p-2 px-4 hover:bg-white/90 active:bg-white/60 ">
-                        <p className="text-4xl">CONTACT</p>
+                        <p className="text-4xl sm:text-2xl md:text-3xl">CONTACT</p>
                       </div>
                     </Link>
                   </div>

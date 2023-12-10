@@ -51,7 +51,7 @@ const Clients = () => {
         </div>
       )}
       {isLandscape && (
-        <div className="flex h-[66vh] grow grid-cols-2 flex-col justify-between bg-white p-8 text-black md:h-[50vh]">
+        <div className="flex h-[88vh] grow grid-cols-2 flex-col justify-between bg-white p-8 text-black md:h-[50vh]">
           <h1 className="flex justify-center py-8 text-5xl md:py-8 md:text-6xl lg:text-7xl">
             CLIENTS
           </h1>

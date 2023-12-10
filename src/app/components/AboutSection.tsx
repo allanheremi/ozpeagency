@@ -43,12 +43,12 @@ const AboutSection = () => {
       {!isMobile && (
         <>
           <section className="flex h-screen flex-col items-center justify-around gap-y-24 px-8 py-24 ">
-            <h1 className="text-7xl">WHAT WE DO</h1>
+            <h1 className="text-6xl lg:text-7xl">WHAT WE DO</h1>
             <div className="max-w-screen flex flex-row justify-between gap-8 gap-x-24 text-center">
               <About content={aboutContentOne} />
               <About content={aboutContentThree} />
-              <About content={aboutContentTwo} />
               <About content={aboutContentFour} />
+              <About content={aboutContentTwo} />
             </div>
           </section>
         </>
@@ -58,11 +58,11 @@ const AboutSection = () => {
         <>
           <section className="h-screen">
             <div className="max-w-screen flex h-[80vh] flex-col justify-center gap-y-24 py-24 text-center md:items-center">
-              <h1 className="text-6xl lg:text-7xl">WHAT WE DO</h1>
+              <h1 className="text-6xl">WHAT WE DO</h1>
 
-              <div className=" flex h-full justify-center px-12 md:gap-x-24 ">
+              <div className=" flex h-full justify-center px-8 md:gap-x-24 ">
                 <div className="flex w-1/2 flex-col">
-                  <div className="grid-cols-2 grid-rows-2">
+                  <div className="grid-cols-2 grid-rows-2 ">
                     <About content={aboutContentOne} />
                     <About content={aboutContentTwo} />
                   </div>

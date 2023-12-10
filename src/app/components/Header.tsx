@@ -14,13 +14,13 @@ const Header = () => {
   // Function to toggle the mobile menu and update body overflow
   const toggleMobileMenu = () => {
     setShowMenu(!showMenu);
-    document.body.style.overflow = showMenu ? 'auto' : 'hidden';
+    document.body.style.overflow = showMenu ? "auto" : "hidden";
   };
 
   // Clean up body overflow style when the component unmounts
   useEffect(() => {
     return () => {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = "auto";
     };
   }, []);
 
@@ -30,15 +30,9 @@ const Header = () => {
         <header className="relative h-[12vh] w-full px-8">
           <div className="flex items-center justify-between p-4">
             <Link href={"/"}>
-              <Image
-                src={"/ozpelogo.png"}
-                height={48}
-                width={48}
-                alt="logo"
-
-              />
+              <Image src={"/ozpelogo.png"} height={48} width={48} alt="logo" />
             </Link>
-            <h1 className="text-2xl md:text-3xl fontHelvetica">OZPE AGENCY</h1>
+            <h1 className="fontHelvetica text-2xl md:text-3xl">OZPE AGENCY</h1>
             <div className="relative">
               {!showDropDown ? (
                 <MenuIcon
@@ -56,22 +50,23 @@ const Header = () => {
               {showDropDown && (
                 <div className="animate-fadeInUpShort absolute right-0 top-full flex flex-col justify-center text-center text-black">
                   <div className="text-xl">
-                    <div className=" border-black bg-white p-2 px-4 hover:bg-white/90 active:bg-white/60">
-                      <Link href={"/"}>
+                    <Link href={"/"}>
+                      <div className=" border-black bg-white p-2 px-4 hover:bg-white/90 active:bg-white/60">
                         <p className="text-4xl">HOME</p>
-                      </Link>
-                    </div>
-         
-                    <div className="border-t border-black/50 bg-white p-2 px-4 hover:bg-white/90 active:bg-white/60">
-                      <Link href={"/about"}>
+                      </div>
+                    </Link>
+
+                    <Link href={"/about"}>
+                      <div className="border-t border-black/50 bg-white p-2 px-4 hover:bg-white/90 active:bg-white/60">
                         <p className="text-4xl">ABOUT</p>
-                      </Link>
-                    </div>
-                    <div className="bg-white border-t border-black/50 p-2 px-4 hover:bg-white/90 active:bg-white/60 ">
-                      <Link href={"/contact"}>
+                      </div>
+                    </Link>
+
+                    <Link href={"/contact"}>
+                      <div className="border-t border-black/50 bg-white p-2 px-4 hover:bg-white/90 active:bg-white/60 ">
                         <p className="text-4xl">CONTACT</p>
-                      </Link>
-                    </div>
+                      </div>
+                    </Link>
                   </div>
                 </div>
               )}
@@ -91,7 +86,7 @@ const Header = () => {
                 alt="logo"
               ></Image>
             </Link>
-            <h1 className="text-2xl fontHelvetica">OZPE AGENCY</h1>
+            <h1 className="fontHelvetica text-2xl">OZPE AGENCY</h1>
             <MenuIcon
               fontSize="large"
               className="hover:cursor-pointer"
@@ -107,20 +102,26 @@ const Header = () => {
                   />
                 </div>
                 <div className="flex h-screen w-screen items-center justify-center ">
-                  <div className="flex items-center justify-center flex-col gap-y-8">
+                  <div className="flex flex-col items-center justify-center gap-y-8">
                     <div className="w-[40vw]  text-center ">
                       <Link href={"/"}>
-                        <p className="text-4xl  text-black  animate-slide-left slide-left">HOME</p>
+                        <p className="animate-slide-left  slide-left  text-6xl text-black">
+                          HOME
+                        </p>
                       </Link>
                     </div>
                     <div className="w-[40vw] text-center ">
                       <Link href={"/about"}>
-                        <p className="text-4xl text-black animate-slide-right slide-right ">ABOUT</p>
+                        <p className="animate-slide-right slide-right text-6xl text-black ">
+                          ABOUT
+                        </p>
                       </Link>
                     </div>
                     <div className="w-[40vw]  text-center ">
                       <Link href={"/contact"}>
-                        <p className="text-4xl text-black  animate-slide-left slide-left">CONTACT</p>
+                        <p className="animate-slide-left slide-left  text-6xl text-black">
+                          CONTACT
+                        </p>
                       </Link>
                     </div>
                   </div>

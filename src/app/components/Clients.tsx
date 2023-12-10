@@ -9,7 +9,9 @@ const Clients = () => {
   useEffect(() => {
     const handleOrientationChange = () => {
       if (window.scrollY > 2) {
-        window.scroll(0, window.scrollY - 5);
+        setTimeout(() => {
+          window.scroll(0, window.scrollY - 2);
+        }, 300);
       }
     };
 
@@ -67,7 +69,7 @@ const Clients = () => {
       )}
       {isLandscape && (
         <div className="flex h-[88vh] grow grid-cols-2 flex-col justify-between bg-white p-8 text-black md:h-[50vh]">
-          <h1 className="flex justify-center py-8 text-5xl md:py-8 md:text-6xl lg:text-7xl">
+          <h1 className="flex justify-center py-8 text-6xl md:py-8 lg:text-7xl">
             CLIENTS
           </h1>
           <div className="flex grow items-center justify-center">

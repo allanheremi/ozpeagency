@@ -5,7 +5,9 @@ import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
 
 const AboutSection = () => {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isMobile = useMediaQuery({ maxWidth: 560 });
+
+
   const aboutContentOne = {
     heading: "PRODUCTION",
     breadTextOne: "photography",
@@ -62,7 +64,7 @@ const AboutSection = () => {
 
               <div className=" flex h-full justify-center px-8 md:gap-x-24 ">
                 <div className="flex w-1/2 flex-col">
-                  <div className="grid-cols-2 grid-rows-2 ">
+                  <div className="grid-cols-2 grid-rows-2">
                     <About content={aboutContentOne} />
                     <About content={aboutContentTwo} />
                   </div>

@@ -1,26 +1,10 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 
 const Clients = () => {
   const isLandscape = useMediaQuery({ query: "(orientation: landscape)" });
-
-  useEffect(() => {
-    const handleOrientationChange = () => {
-      if (window.scrollY > 2) {
-        setTimeout(() => {
-          window.scroll(0, window.scrollY - 2);
-        }, 300);
-      }
-    };
-
-    window.addEventListener("orientationchange", handleOrientationChange);
-
-    return () => {
-      window.removeEventListener("orientationchange", handleOrientationChange);
-    };
-  }, []);
 
   return (
     <>
@@ -68,7 +52,7 @@ const Clients = () => {
         </div>
       )}
       {isLandscape && (
-        <div className="flex h-[88vh] grow grid-cols-2 flex-col justify-between bg-white p-8 text-black md:h-[50vh]">
+        <div className="flex h-[88vh] grow grid-cols-3 flex-col justify-between bg-white p-8 text-black md:h-[50vh]">
           <h1 className="flex justify-center py-8 text-6xl md:py-8 lg:text-7xl">
             CLIENTS
           </h1>

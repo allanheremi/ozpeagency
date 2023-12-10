@@ -7,7 +7,6 @@ import { useMediaQuery } from "react-responsive";
 const AboutSection = () => {
   const isMobile = useMediaQuery({ maxWidth: 560 });
 
-
   const aboutContentOne = {
     heading: "PRODUCTION",
     breadTextOne: "photography",
@@ -59,10 +58,10 @@ const AboutSection = () => {
       {isMobile && (
         <>
           <section className="h-screen">
-            <div className="max-w-screen flex h-[80vh] flex-col justify-center gap-y-24 py-24 text-center md:items-center">
-              <h1 className="text-6xl">WHAT WE DO</h1>
+            <div className="max-w-screen flex h-[80vh] flex-col justify-center gap-y-32 text-center md:items-center">
+              <h1 className="pt-24 text-6xl lg:text-7xl">WHAT WE DO</h1>
 
-              <div className=" flex h-full justify-center px-8 md:gap-x-24 ">
+              <div className=" flex justify-center px-8 md:gap-x-24">
                 <div className="flex w-1/2 flex-col">
                   <div className="grid-cols-2 grid-rows-2">
                     <About content={aboutContentOne} />

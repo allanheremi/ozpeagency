@@ -84,7 +84,7 @@ const page = () => {
             className=" flex h-full w-2/3 flex-col justify-center gap-8  bg-black text-white"
           >
             <div className="flex flex-col">
-              <label className="text-3xl md:text-4xl lg:text-5xl">NAME</label>
+              <label className="text-2xl md:text-4xl lg:text-5xl">NAME</label>
               <input
                 type="text"
                 name="user_name"
@@ -96,7 +96,7 @@ const page = () => {
             </div>
             <div>
               <div className="flex flex-col">
-                <label className="text-3xl md:text-4xl lg:text-5xl">
+                <label className="text-2xl md:text-4xl lg:text-5xl">
                   EMAIL
                 </label>
                 <input
@@ -110,7 +110,7 @@ const page = () => {
             </div>
             <div>
               <div className="flex flex-col gap-4">
-                <label className="text-3xl md:text-4xl lg:text-5xl">
+                <label className="text-2xl md:text-4xl lg:text-5xl">
                   MESSAGE
                 </label>
                 <textarea
@@ -125,7 +125,7 @@ const page = () => {
                   <input
                     type="submit"
                     value="SUBMIT"
-                    className="w-fit rounded-md border border-white bg-black px-2 py-1 text-3xl hover:cursor-pointer active:bg-white/20 md:text-4xl lg:text-5xl "
+                    className="w-fit rounded-md border border-white bg-black px-2 py-1 text-2xl hover:cursor-pointer active:bg-white/20 md:text-4xl lg:text-5xl "
                   />
                 </div>
               </div>

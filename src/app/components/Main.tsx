@@ -12,7 +12,7 @@ const Main = () => {
       controls
     >
       <source
-        src="https://sweet.se/wp-content/uploads/2022/04/Sweet_Headervideo-2022-01.mp4"
+        src="website_film.mp4"
         type="video/mp4"
       />
       Your browser does not support this video format

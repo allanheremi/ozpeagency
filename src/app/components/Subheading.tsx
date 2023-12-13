@@ -3,8 +3,8 @@ import React from "react";
 const Subheading = () => {
   return (
     <div>
-      <h1 className="flex h-[100vh] items-center bg-white p-4 px-8 text-6xl text-black md:px-24 lg:text-7xl">
-        IMAGINATION WAS ALWAYS THE EDGE, TEXT TO BE IMPLEMENTED TEXT TO BE
+      <h1 className="flex h-[100vh] items-center bg-white p-4 px-8 text-2xl text-black md:text-3xl md:px-24 lg:text-3xl sm:text-2xl">
+        THIS IS NOT EMPTY WHITE SPACE, ITS FULL OF THINGS
       </h1>
     </div>
   );

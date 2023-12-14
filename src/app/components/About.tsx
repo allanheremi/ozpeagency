@@ -12,18 +12,20 @@ type ContentProps = {
 const About = ({ content }: ContentProps) => {
   return (
     <div>
-      <div className="flex flex-col whitespace-nowrap p-4 px-8 md:px-2">
-        <h4 className="w-full pb-2 text-left text-3xl md:text-4xl">{content.heading}</h4>
-        <p className="w-full text-left text-2xl md:text-3xl lg:text-4xl text-white/80">
+      <div className="flex w-fit flex-col whitespace-nowrap px-6 py-8 md:px-2">
+        <h4 className="w-full text-left text-3xl md:text-4xl">
+          {content.heading}
+        </h4>
+        <p className="w-full text-left text-2xl text-white/80 md:text-3xl lg:text-4xl">
           {content.breadTextOne}
         </p>
-        <p className="w-full text-left text-2xl md:text-3xl lg:text-4xl text-white/80">
+        <p className="w-full text-left text-2xl text-white/80 md:text-3xl lg:text-4xl">
           {content.breadTextTwo}
         </p>
-        <p className="w-full text-left text-2xl md:text-3xl lg:text-4xl text-white/80">
+        <p className="w-full text-left text-2xl text-white/80 md:text-3xl lg:text-4xl">
           {content.breadTextThree}
         </p>
-        <p className="w-full text-left text-2xl md:text-3xl lg:text-4xl text-white/80">
+        <p className="w-full text-left text-2xl text-white/80 md:text-3xl lg:text-4xl">
           {content.breadTextFour}
         </p>
       </div>

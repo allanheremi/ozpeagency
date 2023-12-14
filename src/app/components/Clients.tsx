@@ -11,7 +11,7 @@ const Clients = () => {
         </h1>
         <div className="flex grow items-center justify-center">
           <div className="grid grid-cols-2 gap-x-24 gap-y-24 bg-white text-center text-black sm:grid-cols-4 md:mb-4 md:gap-x-48 lg:grid-cols-4">
-            <div>
+            <div className="flex items-center">
               <Image
                 src={"/BK_Black_Logo.png"}
                 width={112}
@@ -19,7 +19,15 @@ const Clients = () => {
                 alt="logo bored kitchen"
               />
             </div>
-            <div>
+            <div className="flex items-center">
+              <Image
+                src={"/dokteralogo.png"}
+                width={112}
+                height={112}
+                alt="logo doktera"
+              />
+            </div>
+            <div className="flex items-center">
               <Image
                 src={"/Hairbyem2.png"}
                 width={112}
@@ -27,21 +35,9 @@ const Clients = () => {
                 alt="logo bored kitchen"
               />
             </div>
-            <div>
-              <Image
-                src={"/BK_Black_Logo.png"}
-                width={112}
-                height={112}
-                alt="logo bored kitchen"
-              />
-            </div>
-            <div>
-              <Image
-                src={"/Hairbyem2.png"}
-                width={94}
-                height={94}
-                alt="logo bored kitchen"
-              />
+
+            <div className="flex items-center">
+          placeholder
             </div>
           </div>
         </div>

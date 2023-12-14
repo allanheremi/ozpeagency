@@ -44,7 +44,7 @@ body {
 }
 
 .animate-fadeInUpShort {
-  animation: fadeInUpShort 0.3s ease-in-out;
+  animation: fadeInUpShort 0.3s ease-out;
 }
 
 .animate-fadeInUpLong {

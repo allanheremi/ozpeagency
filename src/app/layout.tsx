@@ -33,6 +33,7 @@ export default function RootLayout({
         <Toaster
           position="top-left"
           toastOptions={{
+            duration: 3500,
             error: {
               style: {
                 background: "black",
@@ -46,6 +47,7 @@ export default function RootLayout({
             },
 
             success: {
+              duration: 3500,
               style: {
                 background: "black",
                 color: "white",

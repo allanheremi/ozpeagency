@@ -24,7 +24,7 @@ const page = () => {
     e.preventDefault();
 
     if (userName.length < 3 || userEmail.length < 3 || userMessage.length < 3) {
-      showToastFail("You overlooked something...");
+      showToastFail("You missed something");
       return;
     }
 
@@ -54,7 +54,7 @@ const page = () => {
     <>
       <div className="max-w-screen max-h-screen">
         <Header />
-        <section className="flex h-[68vh] flex-col items-center justify-center gap-2 md:h-[100vh] sm:h-[150vh]">
+        <section className="flex h-[68vh] flex-col items-center justify-center gap-2 sm:h-[150vh] md:h-[100vh]">
           {/* <h1 className=" text-left text-2xl">CONTACT US</h1> */}
           {/* <div className="text-left">
             <address className="flex flex-col">
@@ -88,7 +88,7 @@ const page = () => {
               <input
                 type="text"
                 name="user_name"
-                className=" border-b border-white bg-black  text-white/80  focus:outline-none active:bg-black text-xl "
+                className=" border-b border-white bg-black  text-xl  text-white/80 focus:outline-none active:bg-black "
                 value={userName}
                 onChange={(e) => setUserName(e.target.value)}
                 autoComplete="off"
@@ -102,7 +102,7 @@ const page = () => {
                 <input
                   type="email"
                   name="user_email"
-                  className=" border-b border-t-white bg-black  text-white/80  focus:outline-none text-xl "
+                  className=" border-b border-t-white bg-black  text-xl  text-white/80 focus:outline-none "
                   onChange={(e) => setUserEmail(e.target.value)}
                   autoComplete="off"
                 />
@@ -115,7 +115,7 @@ const page = () => {
                 </label>
                 <textarea
                   name="message"
-                  className="rounded-md border text-xl border-white bg-black p-1  text-white/80 focus:outline-none"
+                  className="rounded-md border border-white bg-black p-1 text-xl  text-white/80 focus:outline-none"
                   cols={28}
                   rows={5}
                   onChange={(e) => setUserMessage(e.target.value)}

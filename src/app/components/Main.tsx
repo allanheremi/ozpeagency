@@ -2,7 +2,6 @@ import React from "react";
 
 const Main = () => {
   return (
-    // @DEV padding here to show BG white top?
     <video
       autoPlay
       muted
@@ -10,9 +9,10 @@ const Main = () => {
       disablePictureInPicture
       loop={true}
       controls
+      className="w-screen"
     >
       <source
-        src="website_film.mp4"
+        src="https://firebasestorage.googleapis.com/v0/b/ozpeagency-27bcf.appspot.com/o/website_film.mp4?alt=media&token=b11d833b-9a0a-426d-aed1-69b30e86398b"
         type="video/mp4"
       />
       Your browser does not support this video format
@@ -21,3 +21,5 @@ const Main = () => {
 };
 
 export default Main;
+
+// video from firebase storage allanheremidev@gmail.com

@@ -37,8 +37,14 @@ const Clients = () => {
             </div>
 
             <div className="flex items-center">
-          placeholder
+              <Image
+                src={"/ozercompany.png"}
+                width={112}
+                height={112}
+                alt="logo bored kitchen"
+              />
             </div>
+
           </div>
         </div>
       </div>

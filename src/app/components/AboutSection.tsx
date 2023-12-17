@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import About from "./About";
-import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
 
 const AboutSection = () => {
@@ -44,8 +43,16 @@ const AboutSection = () => {
       {!isMobile && (
         <>
           <section className="flex h-screen flex-col items-center justify-around gap-y-24 px-8 py-24">
+            <h1 className="invisible">
+              <strong>
+                <em>
+                  Professional Production, Branding, Building, and Management
+                  Services
+                </em>
+              </strong>
+            </h1>
             <h1 className="text-6xl lg:text-7xl">WHAT WE DO</h1>
-            <div className="max-w-screen flex flex-row justify-between sm:gap-0 gap-8 lg:gap-x-24 text-center">
+            <div className="max-w-screen flex flex-row justify-between gap-8 text-center sm:gap-0 lg:gap-x-24">
               <About content={aboutContentOne} />
               <About content={aboutContentThree} />
               <About content={aboutContentFour} />
@@ -59,6 +66,14 @@ const AboutSection = () => {
         <>
           <section className="h-screen">
             <div className="max-w-screen flex h-[80vh] flex-col justify-center gap-y-32 text-center md:items-center">
+              <h1 className="invisible">
+                <strong>
+                  <em>
+                    Professional Production, Branding, Building, and Management
+                    Services
+                  </em>
+                </strong>
+              </h1>
               <h1 className="pt-24 text-6xl lg:text-7xl">WHAT WE DO</h1>
 
               <div className=" flex justify-center px-8 md:gap-x-24">

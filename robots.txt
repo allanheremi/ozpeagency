@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /private/
+Disallow: /restricted-page.html
+
+User-agent: Googlebot
+Disallow: /images/
+Allow: /images/public/

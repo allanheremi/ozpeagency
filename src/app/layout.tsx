@@ -15,8 +15,8 @@ const leagueGothic = League_Gothic({
 });
 
 export const metadata = {
-  title: "Ozpe Agency",
-  description: "Ozpe Agency",
+  title: "Ozpe Agency - Photography, Film, Graphic Design, Music & Sound",
+  description: "Ozpe Agency specializes in photography, film, graphic design, music & sound. We provide creative direction, brand identity, and management services.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 

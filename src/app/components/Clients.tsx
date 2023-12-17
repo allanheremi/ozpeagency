@@ -16,7 +16,7 @@ const Clients = () => {
                 src={"/BK_Black_Logo.png"}
                 width={112}
                 height={112}
-                alt="logo bored kitchen"
+                alt="Bored kitchen Västerås logo"
               />
             </div>
             <div className="flex items-center">
@@ -24,7 +24,7 @@ const Clients = () => {
                 src={"/dokteralogo.png"}
                 width={112}
                 height={112}
-                alt="logo doktera"
+                alt="Doktera Sverige logo"
               />
             </div>
             <div className="flex items-center">
@@ -32,7 +32,7 @@ const Clients = () => {
                 src={"/Hairbyem2.png"}
                 width={112}
                 height={112}
-                alt="logo bored kitchen"
+                alt="HairByEm västerås logo"
               />
             </div>
 
@@ -41,10 +41,9 @@ const Clients = () => {
                 src={"/ozercompany.png"}
                 width={112}
                 height={112}
-                alt="logo bored kitchen"
+                alt="Özer company västerås logo"
               />
             </div>
-
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 // import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import React, { useRef, useState } from "react";
 import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
-import { toast, ToastOptions } from "react-hot-toast";
+import { toast } from "react-hot-toast";
 
 const page = () => {
   const [userName, setUserName] = useState("");

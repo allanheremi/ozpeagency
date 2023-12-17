@@ -1,11 +1,6 @@
 import "~/styles/globals.css";
 import { Toaster } from "react-hot-toast";
-import { Inter, Young_Serif, League_Gothic } from "next/font/google";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
+import { League_Gothic } from "next/font/google";
 
 const leagueGothic = League_Gothic({
   subsets: ["latin"],

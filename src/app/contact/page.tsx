@@ -4,7 +4,8 @@ import Footer from "../components/Footer";
 // import MailOutlineIcon from "@mui/icons-material/MailOutline";
 // import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import React, { useRef, useState } from "react";
-import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
+import type { EmailJSResponseStatus } from "@emailjs/browser";
 import { toast } from "react-hot-toast";
 
 const page = () => {

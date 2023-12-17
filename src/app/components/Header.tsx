@@ -32,7 +32,9 @@ const Header = () => {
             <Link href={"/"}>
               <Image src={"/ozpelogo.png"} height={48} width={48} alt="logo" />
             </Link>
-            <h1 className="fontHelvetica text-2xl md:text-3xl">OZPE AGENCY</h1>
+            <h1 className="fontHelvetica text-2xl md:text-3xl">
+              <strong className="font-normal">OZPE AGENCY</strong>
+            </h1>
             <div className="relative">
               {!showDropDown ? (
                 <MenuIcon
@@ -86,7 +88,9 @@ const Header = () => {
                 alt="logo"
               ></Image>
             </Link>
-            <h1 className="fontHelvetica text-2xl">OZPE AGENCY</h1>
+            <h1 className="fontHelvetica text-2xl">
+              <strong className="font-normal">OZPE AGENCY</strong>
+            </h1>
             <MenuIcon
               fontSize="large"
               className="hover:cursor-pointer"

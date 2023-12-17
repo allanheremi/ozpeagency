@@ -1,7 +1,6 @@
 import "~/styles/globals.css";
 import { Toaster } from "react-hot-toast";
 import { Inter, Young_Serif, League_Gothic } from "next/font/google";
-import { BorderClear, BorderColor } from "@mui/icons-material";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -16,7 +15,7 @@ const leagueGothic = League_Gothic({
 
 export const metadata = {
   title: "Ozpe Agency - Photography, Film, Graphic Design, Music & Sound",
-  description: "Ozpe Agency specializes in photography, film, graphic design, music & sound. We provide creative direction, brand identity, and management services.",
+  description: "Ozpe Agency specializes in photography, film, graphic design, music & sound. We provide creative direction, brand identity, and management services. Located in Västerås, Sweden",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 

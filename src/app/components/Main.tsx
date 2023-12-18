@@ -15,7 +15,8 @@ const Main = () => {
     >
       <source
         // src="https://firebasestorage.googleapis.com/v0/b/ozpeagency-27bcf.appspot.com/o/website_film.mp4?alt=media&token=b11d833b-9a0a-426d-aed1-69b30e86398b"
-        src="/website_film.mp4"
+        // src="/website_film.mp4"
+        src='/output_video.mp4'
         type="video/mp4"
       />
       Your browser does not support this video format

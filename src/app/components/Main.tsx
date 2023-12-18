@@ -1,13 +1,52 @@
-import React from "react";
+'use client'
+import React, { useEffect, useRef } from "react";
 
-const Main = () => {
+const Main: React.FC = () => {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  useEffect(() => {
+    const videoElement = videoRef.current;
+
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, // Adjust as needed
+    };
+
+    const handleIntersection: IntersectionObserverCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && videoElement) {
+          // Load the video when it comes into the viewport
+          videoElement.load();
+          // Remove the observer after loading
+          observer.unobserve(videoElement);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, options);
+
+    if (videoElement) {
+      // Start observing the video element
+      observer.observe(videoElement);
+    }
+
+    // Clean up the observer when the component unmounts
+    return () => {
+      if (videoElement) {
+        observer.unobserve(videoElement);
+      }
+    };
+  }, []);
+
   return (
     <video
+      ref={videoRef}
       autoPlay
       muted
-      controlsList="nofullscreen nodownload noremoteplayback noplaybackrate" 
+      controlsList="nofullscreen nodownload noremoteplayback noplaybackrate"
       disablePictureInPicture
-      loop={true}
+      loop
       controls
       className="w-screen"
     >
@@ -21,5 +60,3 @@ const Main = () => {
 };
 
 export default Main;
-
-// video from firebase storage allanheremidev@gmail.com

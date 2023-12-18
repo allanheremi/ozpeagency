@@ -30,7 +30,7 @@ const Header = () => {
         <header className="relative h-[12vh] w-full px-8">
           <div className="flex items-center justify-between p-4">
             <Link href={"/"}>
-              <Image src={"/ozpelogo.png"} height={48} width={48} alt="logo" />
+              <Image src={"/ozpelogo.png"} height={40} width={40} alt="logo" />
             </Link>
             <h1 className="fontHelvetica text-2xl md:text-3xl">
               <strong className="font-normal">OZPE AGENCY</strong>

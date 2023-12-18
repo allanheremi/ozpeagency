@@ -58,7 +58,7 @@ const AboutSection = () => {
         <>
           <section className="h-screen">
             <div className="max-w-screen flex h-[80vh] flex-col justify-center gap-y-32 text-center md:items-center">
-              <h1 className="pt-24 text-6xl lg:text-7xl">WHAT WE DO</h1>
+              <h4 className="pt-24 text-6xl lg:text-7xl">WHAT WE DO</h4>
 
               <div className=" flex justify-center px-8 md:gap-x-24">
                 <div className="flex w-1/2 flex-col">

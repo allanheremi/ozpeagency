@@ -10,7 +10,8 @@ const leagueGothic = League_Gothic({
 
 export const metadata = {
   title: "Ozpe Agency - Photography, Film, Graphic Design, Music & Sound",
-  description: "Ozpe Agency specializes in photography, film, graphic design, music & sound. We provide creative direction, brand identity, and management services. Located in Västerås, Sweden",
+  description:
+    "Ozpe Agency specializes in photography, film, graphic design, music & sound. We provide creative direction, brand identity, and management services. Located in Västerås, Sweden",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
@@ -21,6 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <meta name="theme-color" content="#000000"/>
       <body
         className={`bg-black font-sans text-white ${leagueGothic.variable}`}
       >
@@ -33,9 +35,9 @@ export default function RootLayout({
                 background: "black",
                 color: "white",
                 fontSize: "2rem",
-                borderStyle: 'solid',
-                borderWidth: '2px',
-                borderColor: 'white'
+                borderStyle: "solid",
+                borderWidth: "2px",
+                borderColor: "white",
               },
               iconTheme: { primary: "black", secondary: "white" },
             },
@@ -46,9 +48,9 @@ export default function RootLayout({
                 background: "black",
                 color: "white",
                 fontSize: "2rem",
-                borderStyle: 'solid',
-                borderWidth: '2px',
-                borderColor: 'white'
+                borderStyle: "solid",
+                borderWidth: "2px",
+                borderColor: "white",
               },
               iconTheme: { primary: "black", secondary: "white" },
             },

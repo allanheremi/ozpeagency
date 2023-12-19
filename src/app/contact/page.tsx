@@ -14,6 +14,7 @@ const page = () => {
     message: "",
   });
 
+  // eslint-disable-next-line
   const handleChange = (e: any) => {
     const { target } = e;
     const { name, value } = target;

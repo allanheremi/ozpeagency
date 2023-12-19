@@ -32,7 +32,7 @@ const Header = () => {
             <Link href={"/"}>
               <Image src={"/ozpelogo.png"} height={40} width={40} alt="logo" />
             </Link>
-            <h1 className="fontHelvetica text-2xl md:text-3xl">
+            <h1 className="fontHelvetica text-2xl">
               <strong className="font-normal">OZPE AGENCY</strong>
             </h1>
             <div className="relative">

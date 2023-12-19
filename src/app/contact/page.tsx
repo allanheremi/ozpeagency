@@ -16,12 +16,15 @@ const page = () => {
 
   // eslint-disable-next-line
   const handleChange = (e: any) => {
-    const { target } = e;
-    const { name, value } = target;
+    // eslint-disable-next-line
+    const { target } = e as any;
+    // eslint-disable-next-line
+    const { name, value } = target as any;
 
     setForm({
       ...form,
-      [name]: value,
+      // eslint-disable-next-line
+      [name]: value as any,
     });
   };
 
@@ -53,11 +56,11 @@ const page = () => {
       )
       .then(
         (result: EmailJSResponseStatus) => {
-          console.log(result.text as string);
+          console.log(result.text);
           showToastSuccess("Message sent");
         },
         (error: EmailJSResponseStatus) => {
-          console.log(error.text as string);
+          console.log(error.text);
         },
       );
   };

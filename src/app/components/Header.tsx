@@ -11,13 +11,11 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const isMobile = useMediaQuery({ maxWidth: 640 });
 
-  // Function to toggle the mobile menu and update body overflow
   const toggleMobileMenu = () => {
     setShowMenu(!showMenu);
     document.body.style.overflow = showMenu ? "auto" : "hidden";
   };
 
-  // Clean up body overflow style when the component unmounts
   useEffect(() => {
     return () => {
       document.body.style.overflow = "auto";

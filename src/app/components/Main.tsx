@@ -19,7 +19,7 @@ const Main = () => {
         src='/output_video.mp4'
         type="video/mp4"
       />
-      Your browser does not support this video format
+      Your browser does not support this video format.
     </video>
   );
 };
